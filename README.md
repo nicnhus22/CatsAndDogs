@@ -25,5 +25,5 @@ Otherwise, please see the Apache configuration available in the 'sample-conf' fo
 # Features
 * Apache configuration provided w/ SSL enabled (it is also not vulnerable to POODLE)
 * User authentication system with strong hashing (SHA256) and per-user salts
-* User profiles (email only visible to you!)
+* User profiles - we have a signup form and user creation/display was WIP: see routes.php, application/views/my_profile.php and application/views/profile.php
 * Pink on the login button!

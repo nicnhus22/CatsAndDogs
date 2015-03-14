@@ -1,3 +1,4 @@
+<!--  -->
 <article class="profile_container">
 	<h1>Profile</h1>
 	<form id="login_form" action="<?php echo site_url('auth/login'); ?>" method="POST">

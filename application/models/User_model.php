@@ -1,9 +1,14 @@
   <?php
   class User_model extends CI_Model {
 
-  public $title;
-  public $content;
-  public $date;
+  public $id;
+  public $email;
+  public $salt;
+  public $password_hash;
+  public $first_name;
+  public $last_name;
+  public $age;
+  public $gender;
 
   private $table = 'users';
   private $properties = array('email', 'salt', 'password_hash', 'first_name', 'last_name', 'age', 'gender');
@@ -36,23 +41,25 @@
 
   public function insert($data)
   {
-    foreach ($properties as $property) {
+    foreach ($this->properties as $property) {
       if (isset($data[$property])) {
         $this->{$property} = $data[$property];
       }
     }
 
     if (empty($this->salt)) {
-      $this->salt = str_random(15);
+      $length = 15;
+      $this->salt = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length);
     }
-    $this->password_hash = hash('sha256', $user->salt . $this->password);
+    $this->password_hash = hash('sha256', $this->salt . $data['password']);
 
     $this->db->insert('users', $this);
+    return $this->db->insert_id();
   }
 
   public function update($id, $data)
   {
-    foreach ($properties as $property) {
+    foreach ($this->properties as $property) {
       if (isset($data[$property])) {
         $this->{$property} = $data[$property];
       }

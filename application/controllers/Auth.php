@@ -16,6 +16,12 @@ class Auth extends MY_Controller {
 		redirect('/', 'refresh');
 	}
 
+	public function signup() {
+		$last_id = $this->user_model->insert($this->input->post());
+		$_SESSION['active_user'] = $last_id;
+		redirect('/profile', 'refresh');
+	}
+
 	public function logout()
 	{
 		unset($_SESSION['active_user']);

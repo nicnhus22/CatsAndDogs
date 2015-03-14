@@ -5,10 +5,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Your Website</title>
 
+<!-- 	<link rel="stylesheet" type="text/css" href="/public/bootstrap-3.3.2-dist/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="/public/css/style.css">
 	
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 </head>
 
 <body>
@@ -18,13 +23,10 @@
 		<header>
 			<div class="icon_block">
 				<i class="fa fa-github-alt"></i>
-				<span class="text_white">Computer</span><span class="text_orange">Science</span><span class="text_white">Games</span>
+				<span class="mobile_resp_disapear">
+					<span class="text_white">C<span class="resp_disapear">omputer</span></span><span class="text_orange">S<span class="resp_disapear text_orange">cience</span></span><span class="text_white">Games</span>
+				</span>
 			</div>
-			<nav>
-				<!-- <ul>
-					<li><i class="fa fa-github-alt"></i>CS Games</li>
-				</ul> -->
-			</nav>
 		</header>
 		
 		<!-- Content -->	

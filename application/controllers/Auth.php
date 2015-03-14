@@ -23,7 +23,15 @@ class Auth extends MY_Controller {
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
 		
-		$this->load->model('user');
-		$this->load->view('welcome_message');
+		if ($user = $this->user_model->auth($username, $password)) {
+			$_SESSION['active_user'] = $user->id;
+			redirect('/profile/', 'refresh');
+		}
+		redirect('/auth/', 'refresh');
+	}
+
+	public function logout()
+	{
+		unset($_SESSION['active_user']);
 	}
 }

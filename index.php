@@ -7,31 +7,30 @@
 	<title>Your Website</title>
 
 	<link rel="stylesheet" type="text/css" href="/public/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+	<div class="main_container">
 
-	<!-- Header -->
-	<header>
-		<nav>
-			<ul>
-				<li>Your menu</li>
-			</ul>
-		</nav>
-	</header>
-	
-	<!-- Content -->	
-	<section>
-	
+		<!-- Header -->
+		<header>
+			<div class="icon_block"></div>
+			<nav>
+				<ul>
+					<li>CS Games</li>
+				</ul>
+			</nav>
+		</header>
 		
-		
-	</section>
+		<!-- Content -->	
+		<section>	
+			<article class="login_container">
+				<h1>Login</h1>
+			</article>
+		</section>
 
-	<!-- Footer -->
-	<footer>
-		<p>Copyright 2009 Your name</p>
-	</footer>
-
+	</div>
 </body>
 
 </html>

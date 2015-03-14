@@ -1,10 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Auth extends MY_Controller {
+class Profile extends MY_Controller {
 
 	public function index()
 	{
+		$this->require_login();
 		$this->render_view('profile');
 	}
 

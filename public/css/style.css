@@ -104,6 +104,10 @@ article.login_container form a {
 	color:#FFF;
 }
 
+article.login_container form label {
+	font-size: 20px;
+}
+
 article.login_container form div.login_icon {
 	position:relative;
 	padding: 20px;
@@ -160,4 +164,17 @@ footer {
 }
 
 
-
+/* alert/status messages */
+.messages {
+	margin: 0 auto;
+	width: 550px;
+}
+.messages .alert {
+	background: rgba(255,255,255,0.3);
+	padding: 1em;
+	border: 2px solid #ccc;
+	margin: 1em;
+	border-radius: 4px;
+}
+.messages .alert-success { border-color: green; }
+.messages .alert-danger { border-color: red; }

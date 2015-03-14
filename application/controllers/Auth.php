@@ -12,6 +12,7 @@ class Auth extends MY_Controller {
 			$_SESSION['active_user'] = $user->id;
 			redirect('/profile/', 'refresh');
 		}
+		$_SESSION['messages']['error'][] = 'Login failed.';
 		redirect('/auth/', 'refresh');
 	}
 

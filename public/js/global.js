@@ -18,3 +18,11 @@ function backToLogin(){
 	 	$("#login_container").fadeIn();
 	});
 }
+
+
+/* Form submit */
+$("#login_form").keypress(function(e) {
+  if (e.keyCode == 13) {
+    $(this).closest("form").submit();
+  }
+});

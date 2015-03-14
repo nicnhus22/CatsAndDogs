@@ -5,7 +5,7 @@ class Auth extends MY_Controller {
 
 	public function login()
 	{
-		$username = $this->input->post('username');
+		$username = $this->input->post('email');
 		$password = $this->input->post('password');
 		
 		if ($user = $this->user_model->auth($username, $password)) {
@@ -13,7 +13,7 @@ class Auth extends MY_Controller {
 			redirect('/profile/', 'refresh');
 		}
 		$_SESSION['messages']['error'][] = 'Login failed.';
-		redirect('/auth/', 'refresh');
+		redirect('/', 'refresh');
 	}
 
 	public function logout()

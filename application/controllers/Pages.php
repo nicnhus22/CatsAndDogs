@@ -5,6 +5,6 @@ class Pages extends MY_Controller {
 
 	public function index()
 	{
-		$this->render_view('login');
+		$this->render_view('login', 'Login');
 	}
 }

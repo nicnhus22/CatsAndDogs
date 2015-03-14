@@ -6,12 +6,27 @@ class Profile extends MY_Controller {
 	public function index()
 	{
 		$this->require_login();
-		$this->render_view('profile');
+		$this->render_view('my_profile', 'My Profile', array('user' => $this->get_active_user()));
 	}
 
-	public function logout()
+	public function show($id)
 	{
-		unset($_SESSION['active_user']);
-		redirect('/', 'refresh');
+		$this->require_login();
+		$this->render_view('profile', 'User Profile', array('user' => $this->user_model->get($id)));
 	}
+
+	public function update()
+	{
+		$this->require_login();
+		$active_user = $this->get_active_user();
+		$this->user_model->update($active_user->id, $this->input->post());
+		redirect('/profile', 'refresh');
+	}
+
+	public function candidates()
+	{
+		$this->require_login();
+		$this->render_view('candidates', 'Candidates');
+	}
+
 }

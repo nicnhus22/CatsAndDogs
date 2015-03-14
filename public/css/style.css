@@ -141,6 +141,9 @@ article.profile_container {
 	background: rgba(255,255,255,0.2);
 }
 
+article.profile_container ul {list-style-type: none;}
+article.profile_container ul li {margin-bottom: 10px;}
+
 footer {
 	position:relative;
 	height:50px;

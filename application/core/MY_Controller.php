@@ -28,7 +28,7 @@ class MY_Controller extends CI_Controller {
 		$messages = isset($_SESSION['messages']) ? $_SESSION['messages'] : array();
 		$this->load->view('layout/messages', array('messages' => $messages));
 		unset($_SESSION['messages']);
-		$this->load->view($view, array('title' => ''));
+		$this->load->view($view, $args);
 		$this->load->view('layout/footer');
 	}
 }

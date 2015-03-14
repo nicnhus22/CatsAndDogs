@@ -133,6 +133,14 @@ article.login_container form div.login_icon i:hover {
 	color:rgba(255,65,0,0.8);
 }
 
+article.profile_container {
+	position:relative;
+	width:800px;
+	margin: auto auto;
+	padding: 30px;
+	background: rgba(255,255,255,0.2);
+}
+
 footer {
 	position:relative;
 	height:50px;

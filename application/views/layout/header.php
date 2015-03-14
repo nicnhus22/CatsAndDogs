@@ -27,6 +27,13 @@
 					<span class="text_white">C<span class="resp_disapear">omputer</span></span><span class="text_orange">S<span class="resp_disapear text_orange">cience</span></span><span class="text_white">Games</span>
 				</span>
 			</div>
+
+
+			<?php 
+				if(!empty($_SESSION["active_user"])){
+					echo '<div class="logout" ><a href="' . site_url('auth/logout') . '"><i class="fa fa-sign-out"></i> Logout</a></div>';
+				}
+			?>
 		</header>
 		
 		<section>			

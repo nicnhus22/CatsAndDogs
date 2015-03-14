@@ -34,6 +34,17 @@ header {
 	overflow: hidden;
 }
 
+header .logout {
+	float:right;
+	padding-top: 30px;
+}
+
+header .logout a {
+	color:#FFF;
+	text-decoration: none;
+	font-size: 30px;
+}
+
 header .icon_block {
 	font-size: 40px;
 	float:left;

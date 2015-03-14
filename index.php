@@ -27,6 +27,10 @@
 		<section>	
 			<article class="login_container">
 				<h1>Login</h1>
+				<form action="">
+					<input type="text" name="username" placeholder="Username"/>
+					<input type="password" name="password" placeholder="Password"/>
+				</form>
 			</article>
 		</section>
 

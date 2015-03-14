@@ -29,9 +29,16 @@ html {
 
 header {
 	position:relative;
-	text-align: center;
-	padding:30px 0;
+	padding:30px 100px;
 	background: rgba(0,0,0,0.5);
+}
+
+header .icon_block {
+	font-size: 40px;
+}
+
+header .icon_block i {
+	font-size: 70px;
 }
 
 header nav {
@@ -53,9 +60,12 @@ section {
 article.login_container {
 	position:relative;
 	width:500px;
-	height:350px;
 	margin: auto auto;
 	background: rgba(255,255,255,0.2);
+}
+
+article.login_container {
+	padding: 10px;
 }
 
 article.login_container h1 {
@@ -63,23 +73,48 @@ article.login_container h1 {
 	font-size: 40px;
 	font-weight: 100;
 	padding: 20px;
+	margin: 0;
 }
 
 article.login_container form {
 	text-align: center;
 }
 
-article.login_container input {
-	color:#000;
+article.login_container form input {
+	color:rgba(0,0,0,0.5);
 	padding:10px;
 	font-size: 30px;
 	margin-bottom: 10px;
 }
 
+article.login_container form a {
+	color:#FFF;
+	text-decoration: none;
+}
 
+article.login_container form div.login_icon {
+	position:relative;
+	padding: 20px;
+}
+
+article.login_container form div.login_icon i {
+	font-size: 80px;
+	color:#FFFFFF;
+}
 footer {
 	position:relative;
 	height:50px;
+}
+
+
+
+
+/* HELPER CLASSES */
+.text_white {
+	color:#FFF;
+}
+.text_orange {
+	color:#FF4100;
 }
 
 

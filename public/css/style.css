@@ -59,6 +59,10 @@ section {
 	padding: 100px 0;
 }
 
+article#create_account_container {
+	display: none;
+}
+
 article.login_container {
 	position:relative;
 	width:500px;
@@ -68,6 +72,7 @@ article.login_container {
 
 article.login_container {
 	padding: 10px;
+	overflow: hidden;
 }
 
 article.login_container h1 {
@@ -89,9 +94,14 @@ article.login_container form input {
 	margin-bottom: 10px;
 }
 
-article.login_container form a {
+article.login_container a.create_account {
+	float:right;
 	color:#FFF;
 	text-decoration: none;
+}
+
+article.login_container form a {
+	color:#FFF;
 }
 
 article.login_container form div.login_icon {

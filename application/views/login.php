@@ -29,5 +29,5 @@
 			<a href="javascript:void(0)" onclick="document.getElementById('login_form').submit();"><i class="fa fa-money"></i></a>
 		</div>
 	</form>
-	<a class="create_account" href="javascript:void(0)" onclick="backToLogin()">Go back to login</a>
+	<a class="create_account" href="/">Go back to login</a>
 </article>

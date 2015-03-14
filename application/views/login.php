@@ -14,10 +14,11 @@
 <article id="create_account_container" class="login_container">
 	<h1>Create Account</h1>	
 	<form id="login_form" action="<?php echo site_url('auth/login'); ?>" method="POST">
-		<input type="text" name="full_name" placeholder="Full Name"/><br/>
-		<input type="text" name="email" placeholder="Email"/>
-		<input type="password" name="password" placeholder="Password"/><br/>
-		<input type="password" name="password2" placeholder="Re-Enter Password"/><br/>
+		<input type="text" name="full_name" placeholder="Full Name" required/><br/>
+		<input type="text" name="email" placeholder="Email" required/>
+		<input type="password" name="password" placeholder="Password" required/><br/>
+		<input type="password" name="password2" placeholder="Re-Enter Password"/ required><br/>
+		<input type="text" style="width: 170px;" name="age" placeholder="Age" required/><br/>
 		<label class="radio-inline">
 		  <input type="radio" name="gender" id="gender_male" value="male"> Male
 		</label>

@@ -22,12 +22,13 @@ class MY_Controller extends CI_Controller {
 		}
 	}
 
-	function render_view($view) {
-		$this->load->view('layout/header');
+	function render_view($view, $title = '', $args = array()) {
+		$title = empty($title) ? 'CS Games Web Challenge' : $title . ' | ' . 'CS Games Web Challenge';
+		$this->load->view('layout/header', array('title' => $title));
 		$messages = isset($_SESSION['messages']) ? $_SESSION['messages'] : array();
 		$this->load->view('layout/messages', array('messages' => $messages));
 		unset($_SESSION['messages']);
-		$this->load->view($view, array('title' => 'CS Games Web Challenge'));
+		$this->load->view($view, array('title' => ''));
 		$this->load->view('layout/footer');
 	}
 }
